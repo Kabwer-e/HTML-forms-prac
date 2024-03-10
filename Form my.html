@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Form</title>
+    </head>
+    <body>
+        <form action="https//httpbin.org/get" method="get"></form>
+        <p>
+            <label for="firstName">First Name:</label>
+             <input type="text" name="firstName" id="firstName" placeholder="John" autocomplete="on" required autofocus>
+        </p> 
+        <p>    
+            <label for="lastName">Last Name:</label>
+             <input type="text" name="lastname" id="lastName" placeholder="Smith" autocomplete="on" required>
+        </p>
+        <p>
+            <label for="password">Password:</label>
+             <input type="password" name="Password" id="Password" placeholder="your secret"  required>
+        </p>
+        <p>
+            <label for="phoneNumber">Phone Number:</label>
+             <input type="tel" name="Phone Number" id="phoneNumber" placeholder=" 07012345678" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+        </p>
+        <p>
+            <label for="decade">Favorite Decade:</label>
+             <input type="number" name="decade" id="decade" min="1900" max="2000" step="10" value="1910" >
+        </p>
+        <p>
+            <label for="coffee">Favourite Coffee:</label>
+            <select name="coffee" id="coffee" multiple>
+                <optgroup label="Coffees">
+                <option value="regular coffee">Regular Coffee</option>
+                <option value="kenya aa">Kenya AA</option>
+                <option value="uganda Kigezi Special">Uganda Kigezi Special</option>
+                </optgroup>
+                <optgroup label="Espresso Drinks">
+                <option value="espresso">Espresso</option>
+                <option value="ethiopian yirgacheffe">Ethiopian Yirgacheffe</option>
+                <option value="rwanda lake kivu">Rwanda Lake Kivu</option>
+                </optgroup>
+                <option value="others">Others</option>
+            </select>
+        </p>
+            
+    </body>
+</html>
